@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Smart Route Navigator</title>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    />
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        Smart Route Navigator
+    </h1>
+
+    <div class="controls">
+
+        <input
+            list="cities"
+            id="source"
+            placeholder="Source City"
+        >
+
+        <input
+            list="cities"
+            id="destination"
+            placeholder="Destination City"
+        >
+
+        <datalist id="cities"></datalist>
+
+        <button onclick="findRoute()">
+            Find Route
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+    <div id="map"></div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
